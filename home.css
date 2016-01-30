@@ -3,11 +3,13 @@
  */
 
 /* Links */
+a {
+  display: block;
+}
 a,
 a:focus,
 a:hover {
   color: #fff;
-  display: block;
 }
 
 /* Custom default button */
