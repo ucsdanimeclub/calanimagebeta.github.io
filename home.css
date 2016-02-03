@@ -22,6 +22,29 @@ a:hover {
   border: 1px solid #fff;
 }
 
+/*
+ * Fonts
+ */
+
+ @font-face {
+  font-family: 'Bebas';
+  src: url("./fonts/BebasNeue.otf");
+ }
+
+@font-face {
+  font-family: 'BasicTitle';
+  src: url("./fonts/basictitlefont.ttf");
+ }
+
+ @font-face {
+  font-family: 'Noodle';
+  src: url("./fonts/big_noodle_titling.ttf");
+ }
+
+ @font-face {
+  font-family: 'Steelfish';
+  src: url("./fonts/steelfish.ttf");
+ }
 
 /*
  * Base structure
@@ -30,7 +53,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #4646A3;
 }
 body {
   color: #fff;
@@ -74,6 +97,38 @@ body {
   font-weight: bold;
 }
 
+.coverheading {
+  font-size: 40px;
+  font-family: 'BasicTitle';
+  font-weight: bold; 
+  line-height: 0.3;
+}
+
+.coverheading2 {
+  font-size: 90px;
+  font-family: 'Bebas';
+}
+
+.lead {
+  font-family: 'BasicTitle';
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 0.6;
+}
+
+.buttons {
+  background-color: #363E70;
+  border: none;
+  color: white;
+  width: 40%;
+  padding: 12px;
+  text-align: center;
+  font-family: 'Bebas';
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 0.5px;
+}
 
 /*
  * Affix and center
