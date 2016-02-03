@@ -111,9 +111,10 @@ body {
 
 .lead {
   font-family: 'BasicTitle';
-  font-weight: bold;
+  /*font-weight: bold; */
   font-size: 27px;
-  line-height: 0.6;
+  line-height: 0.3;
+  padding-top: 10px;
 }
 
 .buttons {
@@ -121,13 +122,14 @@ body {
   border: none;
   color: white;
   width: 40%;
-  padding: 12px;
+  padding-top: 14px;
+  padding-bottom: 10px;
   text-align: center;
-  font-family: 'Bebas';
+  font-family: 'BasicTitle';
+  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   font-size: 30px;
-  letter-spacing: 0.5px;
 }
 
 /*
