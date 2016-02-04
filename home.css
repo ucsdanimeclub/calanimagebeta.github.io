@@ -55,8 +55,14 @@ body {
   height: 100%;
   background-color: #4646A3;
   background-image: url("./images/AFBannerImage.png");
+<<<<<<< HEAD
   background-size: 2939px 1774px;  
+=======
+  background-size: 80%;
+  background-position: center;
+>>>>>>> ab5ba2558147e3984c4ef7900ed9fff7a93217bf
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 body {
   color: #fff;
