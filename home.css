@@ -54,6 +54,9 @@ html,
 body {
   height: 100%;
   background-color: #4646A3;
+  background-image: url("./images/AFBannerImage.png");
+  background-size: 100% 100%;  
+  background-repeat: no-repeat;
 }
 body {
   color: #fff;
@@ -111,7 +114,7 @@ body {
 
 .lead {
   font-family: 'BasicTitle';
-  /*font-weight: bold; */
+  font-weight: bold;
   font-size: 27px;
   line-height: 0.3;
   padding-top: 10px;
