@@ -55,7 +55,7 @@
                     <li><a href="#">Officers</a></li>
                   </ul>
                 </li>
-                
+
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="ffffff"> Events </font><span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -67,7 +67,13 @@
 
                 <li><a href="http://blog.ucsd.moe"><font color="ffffff">Blog</font></a></li>
 
-                <li><a href="#contact"><font color="ffffff">Contact</font></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="ffffff"> Join Us </font><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.facebook.com/groups/CALAnimageBeta/">Facebook</a></li>
+                  </ul>
+                </li>
 
               </ul>
             </div>
@@ -85,36 +91,23 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Intro">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>UC San Diego's Anime Club</h1>
+              <p>Showings every Monday, and other social events throughout the quarter!</p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Announcements">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
+              <h1>Latest Announcement</h1>
               <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
@@ -139,10 +132,11 @@
       <div class="row featurette">
         <div class="col-md-7" id="showing">
           <h2 class="featurette-heading"><id="showing">Upcoming Showing</h2>
-          <hr id="abouthr">
+          <hr id="showinghr">
           <p class="lead">Fall Quarter GBM #1: The Boy and the Beast</p>
           <p class="desc">The Boy and the Beast &lt;Bakemono no Ko&gt; is the latest feature film from award-winning Japanese director Mamoru Hosoda &lt;Summer Wars, Wolf Children&gt;. When Kyuta, a young orphan living on the streets of Shibuya, stumbles into a fantastic world of beasts, he’s taken in by Kumatetsu, a gruff, rough-around-the-edges warrior beast who’s been searching for the perfect apprentice. Despite their constant bickering, Kyuta and Kumatetsu begin training together and slowly form a bond as surrogate father and son. But when a deep darkness threatens to throw the human and beast worlds into chaos, the strong bond between this unlikely pair will be put to the ultimate test—a final showdown that will only be won if the two can finally work together using all of their combined strength and courage. &lt;from Funimation&gt; </p>
-          <p class="lead" id="loc1"> Location: Price Center Theater </p>
+          <p class="lead" id="loc1"> Location: Price Center Theater </p>          
+          <p class="lead"> Date: September 26th &lt;Monday of Week 1&gt; </p>
           <p class="lead"> Time: TBD </p>
         </div>
         <div class="col-md-5">
@@ -157,6 +151,7 @@
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5" id="social">
           <h2 class="featurette-heading"><id="social">Upcoming Social</h2>
+          <hr id="socialhr">
           <p class="lead">To be announced!</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
@@ -167,9 +162,10 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <div class="col-md-7" id="contact">
+          <h2 class="featurette-heading">Contact</h2>
+          <p class="lead">If you have any questions about any of our events or the club in general, feel free to message any of the current Cal Animage Beta officers on <a href="https://www.facebook.com/groups/CALAnimageBeta/">Facebook</a> or send us an email at ucsdanimeclub*AT*gmail.com.</p>
+          <p class="lead">If you would like to be put on our mailing list, please send an email to cab.mailinglist*AT*gmail.com with the subject "Mailing List". Thank you!</p>
         </div>
         <div class="col-md-5">
           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
@@ -182,7 +178,7 @@
 
 
       <!-- FOOTER -->
-      <footer>
+      <footer id="footer">
         <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; 2016 Cal Animage Beta</p>
       </footer>

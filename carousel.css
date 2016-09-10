@@ -90,7 +90,17 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  z-index: 10;
+  vertical-align: middle;
+}
+
+.carousel-caption h1 {
+  font-family: "Noodle";
+  font-size: 70px;
+}
+
+.carousel-caption p {
+  font-family: "BasicTitle";
+  font-weight: bold;
 }
 
 /* Declare heights because of positioning of img element */
@@ -134,16 +144,26 @@ body {
   color: #17336d;
 }
 
-#abouthr {
+hr{
   border: none;
   height: 4px;
   background-color: #17336d;
-  width: 350px;
   margin-left: 0;
   margin-top: -1px;
 }
 
+#showinghr {
+  width: 350px;
+}
+
+#socialhr{
+  width: 300px;
+}
+
 .featurette-divider {
+  height: 1px;
+  background-color:  #e7e9ef;
+  border: 5px;
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
@@ -216,4 +236,10 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+#footer {
+  font-family: "BasicTitle";
+  font-weight: bold;
+  font-size: 15px;
 }
