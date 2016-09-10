@@ -49,6 +49,8 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
@@ -58,7 +60,7 @@ body {
   font-family: "Noodle";
   padding-left: 50px;
   font-size: 45px;
-  padding-top: 30px;
+  vertical-align: middle;
   letter-spacing: 1.5px;
   word-spacing: 3px;
 }
@@ -72,8 +74,6 @@ body {
   font-family: "Noodle";
   padding-right: 50px;
   font-size: 25px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .dropdown-menu{
