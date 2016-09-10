@@ -171,6 +171,10 @@ hr{
   width: 310px;
 }
 
+#bloghr{
+  width: 350px;
+}
+
 #contacthr{
   width:190px;
 }
@@ -193,7 +197,11 @@ hr{
 }
 
 #upcomingshowingimg{
-  margin-top: 125px;
+  margin-top: 150px;
+}
+
+#blogimg{
+  margin-top: 150px;
 }
 
 #contactimg{
