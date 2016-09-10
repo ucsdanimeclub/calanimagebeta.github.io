@@ -90,7 +90,6 @@ body {
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  vertical-align: middle;
 }
 
 .carousel-caption h1 {
@@ -157,9 +156,12 @@ hr{
 }
 
 #socialhr{
-  width: 300px;
+  width: 310px;
 }
 
+#contacthr{
+  width:190px;
+}
 .featurette-divider {
   height: 1px;
   background-color:  #e7e9ef;
