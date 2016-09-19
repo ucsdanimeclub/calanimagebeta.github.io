@@ -213,10 +213,41 @@ hr{
   font-size: 25px;
   font-weight: bolder;
 }
+
 .desc{
   font-family: "BasicTitle";
   font-size: 19px;
   font-weight: bold;
+}
+
+
+/* OFFICER PAGE & IMAGE ALIGNMENT */
+.lead2{
+  font-family: "BasicTitle";
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+#officer1img{
+   margin-top: 275px;
+}
+
+#officer2img{
+   margin-top: 25px;
+}
+
+#officer3img{
+}
+
+#officer4img{
+   margin-top: 100px;
+}
+
+#officer5img{
+   margin-top: 50px;
+}
+
+#officer6img{
 }
 
 
