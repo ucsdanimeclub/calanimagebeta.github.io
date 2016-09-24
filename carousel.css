@@ -178,11 +178,18 @@ hr{
 #contacthr{
   width:190px;
 }
+
 .featurette-divider {
   height: 1px;
   background-color:  #e7e9ef;
   border: 5px;
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+.mid-divider {
+  height: 1px;
+  background-color:  #e7e9ef;
+  border: 5px;
 }
 
 /* Thin out the marketing headings */
@@ -198,6 +205,10 @@ hr{
 
 #upcomingshowingimg{
   margin-top: 150px;
+}
+
+#socialimg{
+  margin-top: 250px;
 }
 
 #blogimg{
