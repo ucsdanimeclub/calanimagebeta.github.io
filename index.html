@@ -32,69 +32,70 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
+
 <!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
+===================================================================================================================
+=================================================================================================================== -->
+  <body data-spy="scroll" data-target="#navbar">
+
+    <div class="navbar-wrapper" id="navbar">
       <div class="container">
 
-        <nav class="navbar navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="http://ucsd.moe"><font color="ffffff">Cal Animage Beta</font></a>
+         <nav class="navbar navbar-fixed-top">
+            <div class="container">
+               <div class="navbar-header">
+               <!-- For menu icon when collapsed
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>  
+               -->
+                  <a class="navbar-brand" href="http://ucsd.moe">Cal Animage Beta</a>
+               </div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav nav-tabs pull-right" style="border-bottom:0px" role="tablist"> 
+
+                     <li><a href="#events" class="page-scroll">Events</a></li>
+
+                     <li class="dropdown">
+                        <a href="#about" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="history.html">History</a></li>
+                           <li><a href="officers.html">Officers</a></li>
+                        </ul>
+                     </li>
+
+                     <li><a href="#archive" class="page-scroll">Archive</a></li>
+                     <li><a href="#blog" class="page-scroll">Blog</a></li>
+                     <li><a href="#join" class="page-scroll">Join Us</a></li>
+                   
+                  </ul>
+               </div>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav pull-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="ffffff"> About </font><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="history.html">History</a></li>
-                    <li><a href="officers.html">Officers</a></li>
-                  </ul>
-                </li>
+         </nav>
 
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="ffffff"> Events </font><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#showing">Upcoming Showing</a></li>
-                    <li><a href="#social">Upcoming Social</a></li>
-                    <li><a href="http://animefest.ucsd.moe">AnimeFest</a></li>
-                  </ul>
-                </li>
-
-                <li><a href="#blog"><font color="ffffff">Blog</font></a></li>
-
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="ffffff"> Join Us </font><span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#contact">Contact</a></li>
+      <!-- Old navbar info
+                            <li><a href="http://animefest.ucsd.moe">AnimeFest</a></li> 
                     <li><a href="https://www.facebook.com/groups/CALAnimageBeta/">Facebook</a></li>
-                  </ul>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-        </nav>
+        -->
 
       </div>
     </div>
 
 
     <!-- Carousel
-    ================================================== -->
+   ===================================================================================================================
+   =================================================================================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="./images/banner.jpg" alt="Intro">
@@ -106,17 +107,29 @@
             </div>
           </div>
         </div>
+
         <div class="item">
-          <img class="second-slide" src="./images/banner_karaoke.jpg" alt="Announcements">
+          <img class="second-slide" src="./images/banner2.jpg" alt="Announcements">
           <div class="container">
             <div class="carousel-caption">
               <h1>Latest Announcement</h1>
               <hr class="carousel-hr">
-              <h2>Our next event of the quarter will be Karaoke Night, held
-              Saturday February 4th!</h2>
-            </div>r
+              <h2>Have a great summer!</h2>
+            </div>
           </div>
         </div>
+
+        <div class="item">
+            <img class="third-slide" src="./images/banner3.jpg">
+            <div class="container">
+               <div class="carousel-caption">
+                  <h1>Animefest Updates?</h1>
+                  <hr class="carousel-hr">
+                  <h2>Our annual on-campus convention will be held in Winter Quarter. Look forward to it!</h2>
+               </div>
+            </div>
+        </div>
+
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -129,114 +142,139 @@
     </div><!-- /.carousel -->
 
 
-    <!-- Main Section of the Club Page
-    ================================================== -->
+    <!-- Main Section of the Club Page 
+   ===================================================================================================================
+   =================================================================================================================== -->
+
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container">
-      <div class="row featurette">
-        <div class="col-md-7" id="showing">
-          <h2 class="featurette-heading"><id="showing">Upcoming Showing</h2>
-          <hr id="showinghr">
-          <p class="lead"><a
-          href="https://www.facebook.com/events/1271446799614382">Winter Quarter
-          GBM 6: Valentine's Day Special</a></p>
-          <p class="desc">Is your kokoro ready to go doki doki? Are you ready to
-          watch those silly rom coms in preparation for Valentine's Day? We have
-          three shows that you all can vote to watch: Ore Monogatari, I Can't
-          Understand What My Husband is Saying!, and Love Lab. Afterwards, we'll
-          continue watching Black Lagoon.
-          <br>Also, as an extra special, the officers will be giving out
-          Valentine's cards to those that come to GBM. Look forward to it... but
-          it's not like we actually like all of you or anything... gosh!
-          <br>And as usual, since we don't have a room for this week, we will be
-          meeting up in PC near Tapex first.
-          <br>Hope to see you there.
-          <p class="lead" id="loc1"> Location: TBA</p>          
-          <p class="lead"> Date: February 13, 2017 &lt;Monday of Week 6&gt; </p>
-          <p class="lead"> Time: 8PM </p> 
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive img-circle center-block" src="./images/upcoming_showing.jpg" alt="Showing" id="upcomingshowingimg">
-        </div>
-      </div>
-    </div>
-
     <div class="container marketing">
-      <hr class="featurette-divider">
+    <!-- Upcoming Events (gbm, socials) WIP -->
+      <section id="events">
+         <div class="row featurette">
+            <div class="col-xs-7">
+               <h2 class="featurette-heading">Upcoming Events</h2>
+               <hr id="genhr">
+               <p class="desc">Our first GBM will be held on the Monday of Week 1. Look forward to it :> </p>
+             <!--  <a href="#" class="main-btn lead">Some text</a> -->
+            </div>
+            <div class="col-xs-5">
+               <img class="featurette-image img-responsive img-circle center-block" src="./images/social.gif">
+            </div>
+         </div>
 
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5" id="social">
-          <h2 class="featurette-heading"><id="social">Upcoming Social</h2>
-          <hr id="socialhr">
-          <p class="lead">Karaoke</p>
-          <p class="desc">Join us for a night of fun! Sign ups will start GBM 3, and will be open through GBM 4.</p>
-          <p class="lead" id="loc1"> Location: Jin Karaoke &lt;Meet at Peterson Loop&gt;</p>          
-          <p class="lead"> Date: February 4, 2017 &lt;Saturday after Week 4&gt; </p>
-          <p class="lead"> Time: Meet at 5:00 PM </p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive img-circle center-block" src="./images/social.gif" alt="Social" id="socialimg">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7" id="blog">
-          <h2 class="featurette-heading"><id="blog">Latest Blog Post</h2>
-          <hr id="bloghr">
-          <p class="lead"><a href="http://blog.ucsd.moe/entry/top-5-anime-songs.html">Top 5 Anime Songs by Jericho Cabanayan</a></p>
-          <p class="desc">"...Despite enjoying anime as much as the next guy, I have other hobbies and interests. Playing games, reading fanfics, writing sonnets for my waifus... </p>
-
-          <p class="desc">Most of all though, I love turning up the volume to a dope beat. </p>
-
-          <p class="desc">I listen to a plethora of genres. If I’m trying to run on a treadmill, you know I’d be trapping with Future. If I’m trying to dance at the club, you know I’d be wanting to do the Cabbage Patch to some Owl City music. If I’m trying to be romantic for Mami Tomoe, you know I’d be playing some Cascada while we eat underneath the moon. </p>
-
-          <p class="desc">But you know, sometimes I just want to listen to something anime. Like, a pure love song about the subculture I’ve been in since the Naruto headbands arrived to America." </p>
-          <p class="lead"> <a href="http://blog.ucsd.moe">Visit the Cal Animage Beta blog to read more and submit your own post!</a></p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive img-circle center-block" src="./images/blog.png" alt="Blog" id="blogimg">
-        </div>
-      </div>
-
+      </section>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-6" id="contact">
-          <h2 class="featurette-heading">Contact</h2>
-          <hr id="contacthr">
-          <p class="lead">If you have any questions about any of our events or the club in general, feel free to message any of the current Cal Animage Beta officers on <a href="https://www.facebook.com/groups/CALAnimageBeta/">Facebook</a> or send us an email at ucsdanimeclub*AT*gmail.com.</p>
-          <p class="lead">If you would like to be put on our mailing list, please send an email to cab.mailinglist*AT*gmail.com with the subject "Mailing List". Thank you!</p>
+
+    <!-- About (history, officers) -->
+      <section id="about">
+         <div class="row featurette">
+            <div class="col-xs-7 col-xs-push-5">
+               <h2 class="featurette-heading">Who Are We?</h2>
+               <hr id="genhr">
+               <p class="desc">We're UCSD's Anime Club :D </p>
+               <a href="history.html" class="main-btn lead">History</a>
+               <a href="officers.html" class="main-btn lead">Current Officers</a>
+            </div>
+            <div class="col-xs-5 col-xs-pull-7">
+               <img class="featurette-image img-responsive center-block" src="./images/sungod-750.png">
+            </div>
         </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive img-circle center-block" src="./images/contact.png" alt="Contact" id="contactimg">
+      </section>
+
+      <hr class="featurette-divider">
+
+    <!-- What Do We Do? (archive) -->
+      <section id="archive">
+         <div class="row featurette">
+            <div class="col-xs-7">
+               <h2 class="featurette-heading">What Do We Do?</h2>
+               <hr id="genhr">
+               <p class="desc">We host anime showings and other activities every Monday evening at 8pm. We also hang out and organize weekend socials like karaoke, club dinner, etc. Our largest event is our on-campus con, Animefest, which takes place every Winter Quarter.</p>
+               <a href="archive.html" class="main-btn lead">Archive of Old Events</a>
+            </div>
+            <div class="col-xs-5">
+               <img class="featurette-image img-responsive center-block" src="./images/triton-750.png">
+            </div>
+         </div>
+      </section>
+
+      <hr class="featurette-divider">
+
+      <!-- Blog -->
+      <section id="blog">
+         <div class="row featurette">
+            <div class="col-xs-7 col-xs-push-5">
+               <h2 class="featurette-heading">Blog</h2>
+               <hr id="genhr">
+               <p class="desc">INSERT BRIEF DESCRIPTION OF BLOG</p>
+               <a href="http://blog.ucsd.moe/entry/top-5-anime-songs.html" class="main-btn lead">Go to Blog</a>
+            </div>
+            <div class="col-xs-5 col-xs-pull-7">
+               <img class="featurette-image img-responsive img-circle center-block" src="./images/blog.jpg">
+            </div>
         </div>
-      </div>
+      </section>
+
+      <hr class="featurette-divider">
+
+    <!-- Join Us! -->
+      <section id="join">
+         <div class="row featurette">
+            <div class="col-xs-6 col-xs-push-3">
+               <h2 class="featurette-heading-center">Join Us?</h2>
+               <hr id="genhr">
+               <p class="desc">Some sort of description? No idea lol</p>
+               <a href="https://www.facebook.com/groups/CALAnimageBeta/" target="_blank" class="main-btn lead">Check us out on Facebook</a>
+               <a href="#" target="_blank" class="main-btn lead">Join Mailing List</a> <!--TODO create googleform--> 
+            </div>
+            <!--
+            <div class="col-xs-5 col-xs-pull-7">
+               <img class="featurette-image img-responsive img-circle center-block" src="./images/social.gif">
+            </div>
+            -->
+         </div>
+      </section>
 
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
 
-
       <!-- FOOTER -->
       <footer id="footer">
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Cal Animage Beta</p>
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-7 col-xs-push-5"><a href="#">Back to top</a>
+               </div>
+               <div class="col-xs-7">&copy; 2017 Cal Animage Beta
+               </div>
+               <div class="pull-right"><a href="#" id="fb"><img src="./images/fb-blue.png"></a>
+               </div>
+            </div>
+            
+         </div>
       </footer>
 
     </div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Bootstrap, jQuery
+   ===================================================================================================================
+   =================================================================================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jQuery -->
+    <script src="jquery/jquery.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="carousel.js"></script>
+
   </body>
 </html>

@@ -9,7 +9,9 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Cal Animage Beta: History</title>
+    <title>Cal Animage Beta</title>
+    <meta name="description" content="UC San Diego's anime club, Cal Animage Beta.">
+    <meta name="image" content="./images/banner.jpg">
 
     <!-- Bootstrap core CSS -->
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
@@ -60,12 +62,12 @@
                      <li class="dropdown">
                         <a href="index.html#about" class="dropdown-toggle page-scroll" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                           <li><a href="#">History</a></li>
+                           <li><a href="history.html">History</a></li>
                            <li><a href="officers.html">Officers</a></li>
                         </ul>
                      </li>
 
-                     <li><a href="index.html#archive" class="page-scroll">Archive</a></li>
+                     <li><a href="#archive" class="page-scroll">Archive</a></li>
                      <li><a href="index.html#blog" class="page-scroll">Blog</a></li>
                      <li><a href="index.html#join" class="page-scroll">Join Us</a></li>
                    
@@ -77,43 +79,53 @@
       </div>
     </div>
 
+
     <!-- Carousel
    ===================================================================================================================
    =================================================================================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      </ol>
+
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="./images/banner.jpg" alt="Intro">
           <div class="container">
             <div class="carousel-caption">
-              <h1>History</h1>
+              <h1>Archive</h1>
               <hr class="carousel-hr">
+              <h2><h2>
             </div>
           </div>
         </div>
 
       </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div><!-- /.carousel -->
 
 
+    <!-- Main Section of Archive
+   ===================================================================================================================
+   =================================================================================================================== -->
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container">
-
-      <div class="row featurette">
-        <div class="col-xs-11" id="history">
-          <p class="lead">"Cal Animage" is a loosely organized association of international anime clubs. The first chapter, Cal Animage Alpha, was founded at UC Berkeley in 1989. Our club, Cal Animage Beta, was established in 1990 as the second chapter. In 1992, Cal Animage chapters from multiple universities, including UCSD, co-sponsored the first Anime Expo.
-          <p class="lead"> Although anime distribution has increased in the United States, making it easier to purchase and watch shows, Cal Animage Beta continues to host weekly anime showings as well as bi-weekly off campus or on campus social events. Some of our events include Karaoke, Club Dinner Socials, and Tea Party, which is an anime marathon and potluck. Our largest event of the year is Animefest, an on campus convention that includes gaming, performances, Artist Alley, panels, and more! </p>
-          <p class="lead"> For more information on our showings or other upcoming events, check out our "events" section on our website, or join our Facebook group or mailing list for updates.
-        </div>
-      </div>
-
-    <hr class="featurette-divider">
-
+    <div class="container marketing">
+      <section id="archive">
+         <div class="row featurette">
+            <h1>Under construction</h1>
+         </div>
+      </section>
+    
       <!-- /END THE FEATURETTES -->
 
       <!-- FOOTER -->
@@ -134,13 +146,21 @@
     </div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Bootstrap, jQuery
+   ===================================================================================================================
+   =================================================================================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jQuery -->
+    <script src="jquery/jquery.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="carousel.js"></script>
+
   </body>
 </html>

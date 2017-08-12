@@ -3,8 +3,10 @@
 /* Padding below the footer and lighter body text */
 
 body {
+  position: relative;
   padding-bottom: 40px;
   color: #5a5a5a;
+  background-color: #f1f4f4;
 }
 
 /* FONTS */
@@ -13,18 +15,51 @@ body {
   src: url("./fonts/basictitlefont.ttf");
  }
 
- @font-face {
+@font-face {
   font-family: 'Noodle';
   src: url("./fonts/big_noodle_titling.ttf");
  }
 
-  @font-face {
+@font-face {
   font-family: 'Road';
   src: url("./fonts/Kenzo Regular.otf");
  }
 
+/* COLORS
+--------------------------------------------------- */
+
+/* IMAGE & BUTTONS PROPERTIES
+ -------------------------------------------------- */
+.main-btn {
+   background-color: #3760b2;
+   border: 5px solid #3760b2;
+   color: #ffffff;
+   padding 32px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: block;
+   margin: 4px 4px;
+   font-size: 25px;
+   border-radius: 15%;
+}
+
+.main-btn:hover {
+   background-color: #f1ffc6;
+   color: #000000;
+   border: 5px solid #3760b2;
+}
+
+
 /* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
+--------------------------------------------------- */
+/*For dropdowns in navbar*/
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+   display: block;
+   overflow: visible;
+}
+
+/* Tablist */
+
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -34,6 +69,7 @@ body {
   left: 0;
   z-index: 20;
 }
+
 
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
@@ -48,6 +84,7 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: auto;
+  overflow: visible;
 }
 
 .navbar-brand {
@@ -57,21 +94,54 @@ body {
   vertical-align: middle;
   letter-spacing: 1.5px;
   word-spacing: 3px;
+  color: #ffffff;
+}
+
+.navbar-brand:hover {
+   color: #f1fec6;
 }
 
 .navbar {
   background-color: #17336d;
   color: #ffffff;
+  overflow: visible;
 }
 
 .navbar-nav {
   font-family: "Noodle";
   padding-right: 50px;
   font-size: 25px;
+  color: #ffffff;
+}
+
+.navbar-nav:hover {
+   border-radius: 15%;
 }
 
 .dropdown-menu{
   font-size: 20px;
+}
+
+.icon-bar {
+   background-color: #ffffff;
+   border-radius: 15%;
+
+}
+
+.go-top {
+   position: fixed;
+   bottom: 2em;
+   right 2em;
+   text-decoration:none;
+   color:white;
+   background-color: #ffffff;
+   font-size:12px;
+   padding: 1em;
+   border-radius: 45%;
+}
+
+.go-top:hover {
+   background-color: #17336d;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -85,6 +155,7 @@ body {
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
+
   color: #ffffff;
 }
 
@@ -146,7 +217,7 @@ body {
 
 
 /* Featurettes
-------------------------- */
+------------------------------------- */
 .featurette{
   padding-top: 0;
 }
@@ -163,27 +234,20 @@ hr{
   margin-top: -1px;
 }
 
-#showinghr {
-  width: 350px;
+#genhr {
+   width: 100%;
 }
 
-#socialhr{
-  width: 310px;
-}
-
-#bloghr{
-  width: 350px;
-}
-
-#contacthr{
-  width:190px;
+#events, #about, #archive, #blog, #join{
+   padding-top: 100px;
+   margin-top: -100px;
 }
 
 .featurette-divider {
-  height: 1px;
-  background-color:  #e7e9ef;
+  height: 5px;
+  background-color: #eaeef2;
   border: 5px;
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 .mid-divider {
@@ -192,11 +256,26 @@ hr{
   border: 5px;
 }
 
+.alt-div {
+   background-color: #edf3ff;
+   width: 100%;
+}
+
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+/* For special emphasized headings */
+.featurette-heading-center {
+   font-weight: 300;
+   line-height: 1;
+   letter-spacing: -1px;
+   text-align: center;
+   background-color: #e58f65;
+   border-radius: 70%;
 }
 
 #loc1{
@@ -221,44 +300,56 @@ hr{
 
 .lead{
   font-family: "BasicTitle";
-  font-size: 25px;
   font-weight: bolder;
 }
 
 .desc{
   font-family: "BasicTitle";
-  font-size: 19px;
   font-weight: bold;
 }
 
 
-/* OFFICER PAGE & IMAGE ALIGNMENT */
+
+/* OFFICER PAGE & IMAGE ALIGNMENT 
+ -------------------------------------------------- */
 .lead2{
   font-family: "BasicTitle";
   font-size: 32px;
   font-weight: bolder;
 }
 
-#officer1img{
-   margin-top: 275px;
+.bio-icon {
+   padding: 5px;
 }
 
-#officer2img{
-   margin-top: 25px;
+.bio-icon:hover {
+   opacity: 0.5;
 }
 
-#officer3img{
+#bio-jaime,
+#bio-brian,
+#bio-chris,
+#bio-kendrick,
+#bio-alexis,
+#bio-izabela {
+   padding-top: 100px;
+   margin-top: -100px;
 }
 
-#officer4img{
-   margin-top: 100px;
+.bio-desc {
+   flex: 1;
 }
 
-#officer5img{
-   margin-top: 50px;
+#officers ul{
+   list-style-type: none;
 }
 
-#officer6img{
+
+/* FOOTER
+ ------------------------------------------------- */
+#footer {
+  font-family: "BasicTitle";
+  font-weight: bold;
 }
 
 
@@ -294,6 +385,23 @@ hr{
   .featurette-heading {
     font-size: 50px;
   }
+
+  .featurette-heading-center {
+     font-size: 60px;
+  }
+
+  .lead {
+     font-size: 25px;
+  }  
+  
+  .desc {
+     font-size: 20px;
+  }
+
+   #footer {
+      font-size: 15px;
+   }
+
 }
 
 @media (min-width: 992px) {
@@ -303,7 +411,5 @@ hr{
 }
 
 #footer {
-  font-family: "BasicTitle";
-  font-weight: bold;
-  font-size: 15px;
+   padding-top: 25px;
 }
