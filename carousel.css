@@ -34,13 +34,14 @@ body {
    background-color: #3760b2;
    border: 5px solid #3760b2;
    color: #ffffff;
-   padding 32px 32px;
+   padding 32px 32px 32px 32px;
+   vertical-align: center;
    text-align: center;
    text-decoration: none;
    display: block;
    margin: 4px 4px;
    font-size: 25px;
-   border-radius: 15%;
+   border-radius: 26px;
 }
 
 .main-btn:hover {
@@ -87,6 +88,11 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   overflow: visible;
 }
 
+.navbar-header {
+   float: left;
+   text-align: center;
+}
+
 .navbar-brand {
   font-family: "Noodle";
   padding-left: 50px;
@@ -99,6 +105,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .navbar-brand:hover {
    color: #f1fec6;
+}
+
+.navbar-brand-xs {
+  font-family: "Noodle";
+  font-size: 45px;
+  vertical-align: middle;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  color: #ffffff;
+  float:none;
 }
 
 .navbar {
@@ -124,8 +140,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .icon-bar {
    background-color: #ffffff;
-   border-radius: 15%;
-
 }
 
 .go-top {
@@ -161,13 +175,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 
 .carousel-caption h1 {
   font-family: "Noodle";
-  font-size: 75px;
+
   text-shadow: -3px 0 #17336d, 0 3px #17336d, 3px 0 #17336d, 0 -3px #17336d;
 }
 
 .carousel-caption h2 {
   font-family: "Noodle";
-  font-size: 32px;
+
   text-shadow: -2.5px 0 #17336d, 0 2.5px #17336d, 2.5px 0 #17336d, 0 -2.5px #17336d;
 }
 
@@ -382,6 +396,16 @@ hr{
     line-height: 1.4;
   }
 
+  /*So text doesn't go off-screen*/
+   .carousel-caption h1 {
+      font-size: 75px;
+   }
+
+   .carousel-caption h2 {
+      font-size: 32px;
+   }
+
+   /*Responsive text of content*/
   .featurette-heading {
     font-size: 50px;
   }
