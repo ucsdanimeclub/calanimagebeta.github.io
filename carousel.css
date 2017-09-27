@@ -25,6 +25,11 @@ body {
   src: url("./fonts/Kenzo Regular.otf");
  }
 
+@font-face {
+   font-family: 'Trans';
+   src: url("./fonts/StTransmission-200-Thin.otf");
+}
+
 /* COLORS
 --------------------------------------------------- */
 
@@ -308,7 +313,7 @@ hr{
 }
 
 .desc{
-  font-family: "BasicTitle";
+  font-family: "Trans";
   font-weight: bold;
 }
 
