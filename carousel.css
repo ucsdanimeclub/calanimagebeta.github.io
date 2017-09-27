@@ -107,16 +107,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
    color: #f1fec6;
 }
 
-.navbar-brand-xs {
-  font-family: "Noodle";
-  font-size: 45px;
-  vertical-align: middle;
-  letter-spacing: 1.5px;
-  word-spacing: 3px;
-  color: #ffffff;
-  float:none;
-}
-
 .navbar {
   background-color: #17336d;
   color: #ffffff;
