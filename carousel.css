@@ -7,6 +7,7 @@ body {
   padding-bottom: 40px;
   color: #5a5a5a;
   background-color: #f1f4f4;
+
 }
 
 /* FONTS */
@@ -32,6 +33,8 @@ body {
 
 /* COLORS
 --------------------------------------------------- */
+
+
 
 /* IMAGE & BUTTONS PROPERTIES
  -------------------------------------------------- */
@@ -62,6 +65,7 @@ body {
 ul.nav li.dropdown:hover > ul.dropdown-menu {
    display: block;
    overflow: visible;
+   
 }
 
 /* Tablist */
@@ -73,7 +77,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 20;
+  z-index: 200;
 }
 
 
@@ -91,11 +95,6 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .navbar-wrapper .navbar .container {
   width: auto;
   overflow: visible;
-}
-
-.navbar-header {
-   float: left;
-   text-align: center;
 }
 
 .navbar-brand {
@@ -137,7 +136,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
    background-color: #ffffff;
 }
 
-.go-top {
+.go-top { /*The go-to-top button in officer page*/
    position: fixed;
    bottom: 2em;
    right 2em;
@@ -335,16 +334,21 @@ hr{
    opacity: 0.5;
 }
 
-#bio-jaime,
 #bio-brian,
-#bio-chris,
 #bio-kendrick,
 #bio-alexis,
-#bio-izabela {
+#bio-izabela,
+#bio-david,
+#bio-hao,
+#bio-jeremy,
+#bio-gladys,
+#bio-carlos,
+#bio-annabelle,
+#bio-jasmine,
+#bio-marshall {
    padding-top: 100px;
    margin-top: -100px;
 }
-
 .bio-desc {
    flex: 1;
 }
@@ -364,7 +368,11 @@ hr{
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-
+@media (min-width: 411px) {
+  .navbar-brand {
+  	padding-left: 15px;
+  }
+}
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
@@ -382,6 +390,10 @@ hr{
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
+  }
+
+  .navbar-brand {
+  	padding-left: 100px;
   }
 
   /* Bump up size of carousel content */
