@@ -42,7 +42,7 @@ body {
    background-color: #3760b2;
    border: 5px solid #3760b2;
    color: #ffffff;
-   padding 32px 32px 32px 32px;
+   padding: 32px 32px 32px 32px;
    vertical-align: center;
    text-align: center;
    text-decoration: none;
@@ -139,7 +139,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .go-top { /*The go-to-top button in officer page*/
    position: fixed;
    bottom: 2em;
-   right 2em;
+   right: 2em;
    text-decoration:none;
    color:white;
    background-color: #ffffff;
